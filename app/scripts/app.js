@@ -19,6 +19,14 @@ app.config(['$routeProvider', '$locationProvider',
                 templateUrl: 'templates/behaviour.html',
                 controller: 'BehaviourCtrl'
             })
+            .when('/gallery', {
+                templateUrl: 'templates/gallery.html',
+                controller: 'GalleryCtrl'
+            })
+            .when('/contact', {
+                templateUrl: 'templates/contact.html',
+                controller: 'ContactCtrl'
+            })
             .when('/404', {
                 template: '404 | Not Found'
             })
