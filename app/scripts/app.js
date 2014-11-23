@@ -8,6 +8,9 @@ app.config(['$routeProvider', '$locationProvider',
                 templateUrl: 'templates/home.html',
                 controller: 'HomeCtrl'
             })
+            .when('/home', {
+                redirectTo: '/'
+            })
             .when('/about', {
                 templateUrl: 'templates/about.html',
                 controller: 'AboutCtrl'
@@ -17,7 +20,7 @@ app.config(['$routeProvider', '$locationProvider',
                 controller: 'BehaviourCtrl'
             })
             .when('/404', {
-                template: '<h1>404 | Not Found</h1>'
+                template: '404 | Not Found'
             })
             .otherwise({ redirectTo: '/404' });
 
