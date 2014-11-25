@@ -1,22 +1,22 @@
 app
-    .controller('HomeCtrl', ['$scope', function ($scope) {
-        $scope.title = 'Home';
+    .controller('HomeCtrl', ['$rootScope', function ($rootScope) {
+        $rootScope.title = 'Home';
     }])
-    .controller('AboutCtrl', ['$scope', function ($scope) {
-        $scope.title = 'About';
+    .controller('AboutCtrl', ['$rootScope', function ($rootScope) {
+        $rootScope.title = 'About';
     }])
-    .controller('BehaviourCtrl', ['$scope', function ($scope) {
-        $scope.title = 'Behaviour';
+    .controller('BehaviourCtrl', ['$rootScope', function ($rootScope) {
+        $rootScope.title = 'Behaviour';
     }])
-    .controller('CultureCtrl', ['$scope', function ($scope) {
-        $scope.title = 'Culture';
+    .controller('CultureCtrl', ['$rootScope', function ($rootScope) {
+        $rootScope.title = 'Culture';
     }])
-    .controller('GalleryCtrl', ['$scope', function ($scope) {
-        $scope.title = 'Gallery';
+    .controller('GalleryCtrl', ['$rootScope', function ($rootScope) {
+        $rootScope.title = 'Gallery';
     }])
-    .controller('ContactCtrl', ['$scope', function ($scope) {
-        $scope.title = 'Contact';
+    .controller('ContactCtrl', ['$rootScope', function ($rootScope) {
+        $rootScope.title = 'Contact';
     }])
-    .controller('HeaderCtrl', ['$scope', function ($scope){
-        $scope.navigations = ['Home', 'About', 'Behaviour', 'Culture', 'Gallery', 'Contact'];
+    .controller('HeaderCtrl', ['$rootScope', function ($rootScope){
+        $rootScope.navigations = ['Home', 'About', 'Behaviour', 'Culture', 'Gallery', 'Contact'];
     }])

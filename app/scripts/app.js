@@ -1,4 +1,5 @@
-var app = angular.module('jangkrikApp', ['ngRoute']);
+var  APPNAME = 'jangkrikApp',
+     app     = angular.module(APPNAME, ['ngRoute']);
 
 app.config(['$routeProvider', '$locationProvider', 
     function($routeProvider, $locationProvider) {
@@ -43,3 +44,7 @@ app.config(['$routeProvider', '$locationProvider',
 
     }
 ]);
+
+angular.element(document).ready(function() {
+    angular.bootstrap(document, [APPNAME]);
+});
