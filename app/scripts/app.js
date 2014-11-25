@@ -19,6 +19,10 @@ app.config(['$routeProvider', '$locationProvider',
                 templateUrl: 'templates/behaviour.html',
                 controller: 'BehaviourCtrl'
             })
+            .when('/culture', {
+                templateUrl: 'templates/culture.html',
+                controller: 'CultureCtrl'
+            })
             .when('/gallery', {
                 templateUrl: 'templates/gallery.html',
                 controller: 'GalleryCtrl'

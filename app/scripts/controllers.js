@@ -8,6 +8,9 @@ app
     .controller('BehaviourCtrl', ['$scope', function ($scope) {
         $scope.title = 'Behaviour';
     }])
+    .controller('CultureCtrl', ['$scope', function ($scope) {
+        $scope.title = 'Culture';
+    }])
     .controller('GalleryCtrl', ['$scope', function ($scope) {
         $scope.title = 'Gallery';
     }])
@@ -15,5 +18,5 @@ app
         $scope.title = 'Contact';
     }])
     .controller('HeaderCtrl', ['$scope', function ($scope){
-        $scope.navigations = ['Home', 'About', 'Behaviour', 'Gallery', 'Contact'];
+        $scope.navigations = ['Home', 'About', 'Behaviour', 'Culture', 'Gallery', 'Contact'];
     }])
