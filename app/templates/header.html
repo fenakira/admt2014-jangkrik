@@ -7,7 +7,7 @@
     <div class="row">
         <nav class="nav navbar-default" role="navigation">
             <ul class="nav navbar-nav col-centered">
-                <li ng-repeat="nav in navigations"><a href="{{'#/' + nav.toLowerCase()}}">{{nav}}</a></li>
+                <li ng-repeat="nav in navigations"><a href="{{'#/#' + nav.toLowerCase()}}" ng-click="changeTitle($index)">{{nav}}</a></li>
             </ul>
         </nav>
     </div>

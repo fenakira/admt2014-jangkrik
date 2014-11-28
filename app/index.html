@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" href="styles/main.css">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     </head>
-    <body>
+    <body ng-controller="GlobalCtrl">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -28,8 +28,15 @@
         <script src="scripts/controllers.js"></script>
 
         <!-- Add your site or application content here -->
-        <div ng-include="'templates/header.html'" ng-controller="HeaderCtrl"></div>
-        <div ng-view></div>
+        <div ng-include="'templates/header.html'"></div>
+
+        <section id="home"      ng-include="'templates/home.html'"></section>
+        <section id="about"     ng-include="'templates/about.html'"></section>
+        <section id="behaviour" ng-include="'templates/behaviour.html'"></section>
+        <section id="culture"   ng-include="'templates/culture.html'"></section>
+        <section id="gallery"   ng-include="'templates/gallery.html'"></section>
+        <section id="contact"   ng-include="'templates/contact.html'"></section>
+
         <div ng-include="'templates/footer.html'"></div>
     </body>
 </html>
